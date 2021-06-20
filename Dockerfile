@@ -8,4 +8,4 @@ RUN unzip kindle.zip
 RUN cp -rvf markups-kindle/* .
 RUN rm -rf _MACOSX markups-kindle kindle.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 8080
+EXPOSE 80
